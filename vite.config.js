@@ -15,6 +15,7 @@ export default defineConfig({
     allowedHosts: [
       'goat111-production.up.railway.app',
       'goat111-staging.up.railway.app',
+      'goat333-production.up.railway.app',
       'www.yourdomain.com',
       'localhost',
       '127.0.0.1'
