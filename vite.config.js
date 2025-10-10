@@ -16,7 +16,7 @@ export default defineConfig({
       'goat111-production.up.railway.app',
       'goat111-staging.up.railway.app',
       'goat333-production.up.railway.app',
-      'www.yourdomain.com',
+      'www.kaodee39.site',
       'localhost',
       '127.0.0.1'
     ]
