@@ -314,37 +314,37 @@ function App() {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
               <img src={portfolio1} alt="ผลงาน 1" className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-300 flex items-center justify-center">
                 <p className="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">Exhibition Booth Design</p>
               </div>
             </div>
             <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
               <img src={portfolio2} alt="ผลงาน 2" className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-300 flex items-center justify-center">
                 <p className="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">Event Setup</p>
               </div>
             </div>
             <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
               <img src={portfolio3} alt="ผลงาน 3" className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-300 flex items-center justify-center">
                 <p className="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">Graphic Design</p>
               </div>
             </div>
             <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
               <img src={officeWorkspace} alt="ผลงาน 4" className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-300 flex items-center justify-center">
                 <p className="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">Creative Workspace</p>
               </div>
             </div>
             <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
               <img src={eventSetup} alt="ผลงาน 5" className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-300 flex items-center justify-center">
                 <p className="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">Event Management</p>
               </div>
             </div>
             <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
               <img src={heroBg} alt="ผลงาน 6" className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-300 flex items-center justify-center">
                 <p className="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">Advertising Campaign</p>
               </div>
             </div>
@@ -514,4 +514,3 @@ function App() {
 }
 
 export default App
-
