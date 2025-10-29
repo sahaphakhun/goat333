@@ -23,41 +23,30 @@ import a8 from './assets/a8.jpg'
 function App() {
   const [activeService, setActiveService] = useState('design')
   const isMobile = useIsMobile()
-
-  if (isMobile) {
-    const href = 'https://lin.ee/D8JnhKa'
-    return (
-      <div>
-        <a href={href} target="_blank" rel="noopener noreferrer">
-          <img src={a1} alt="banner a1" width="100%" />
-        </a>
-        <a href={href} target="_blank" rel="noopener noreferrer">
-          <img src={a2} alt="banner a2" width="100%" />
-        </a>
-        <a href={href} target="_blank" rel="noopener noreferrer">
-          <img src={a3} alt="banner a3" width="100%" />
-        </a>
-        <a href={href} target="_blank" rel="noopener noreferrer">
-          <img src={a4} alt="banner a4" width="100%" />
-        </a>
-        <a href={href} target="_blank" rel="noopener noreferrer">
-          <img src={a5} alt="banner a5" width="100%" />
-        </a>
-        <a href={href} target="_blank" rel="noopener noreferrer">
-          <img src={a6} alt="banner a6" width="100%" />
-        </a>
-        <a href={href} target="_blank" rel="noopener noreferrer">
-          <img src={a7} alt="banner a7" width="100%" />
-        </a>
-        <a href={href} target="_blank" rel="noopener noreferrer">
-          <img src={a8} alt="banner a8" width="100%" />
-        </a>
-      </div>
-    )
-  }
+  const lineHref = 'https://lin.ee/D8JnhKa'
+  const mobileBanners = [
+    { src: a1, alt: 'banner a1' },
+    { src: a2, alt: 'banner a2' },
+    { src: a3, alt: 'banner a3' },
+    { src: a4, alt: 'banner a4' },
+    { src: a5, alt: 'banner a5' },
+    { src: a6, alt: 'banner a6' },
+    { src: a7, alt: 'banner a7' },
+    { src: a8, alt: 'banner a8' },
+  ]
 
   return (
     <div className="min-h-screen bg-white">
+      {isMobile && (
+        <div className="px-4 pt-4 space-y-4">
+          {mobileBanners.map((banner, index) => (
+            <a key={banner.alt} href={lineHref} target="_blank" rel="noopener noreferrer">
+              <img src={banner.src} alt={banner.alt} className="w-full rounded-xl shadow-md" />
+            </a>
+          ))}
+        </div>
+      )}
+
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div 
