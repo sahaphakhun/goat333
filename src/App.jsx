@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useIsMobile } from './hooks/use-mobile.js'
 import { Button } from '@/components/ui/button.jsx'
 import { Palette, Megaphone, Calendar, Mail, Phone, MapPin, Facebook, Instagram, CheckCircle2, LineChart } from 'lucide-react'
 import './App.css'
@@ -10,9 +11,50 @@ import eventSetup from './assets/event-setup-kaodee.jpg'
 import portfolio1 from './assets/portfolio-1-kaodee.jpg'
 import portfolio2 from './assets/portfolio-2-kaodee.jpg'
 import portfolio3 from './assets/portfolio-3-kaodee.jpg'
+import a1 from './assets/a1.gif'
+import a2 from './assets/a2.jpg'
+import a3 from './assets/a3.gif'
+import a4 from './assets/a4.jpg'
+import a5 from './assets/a5.jpg'
+import a6 from './assets/a6.gif'
+import a7 from './assets/a7.jpg'
+import a8 from './assets/a8.jpg'
 
 function App() {
   const [activeService, setActiveService] = useState('design')
+  const isMobile = useIsMobile()
+
+  if (isMobile) {
+    const href = 'https://lin.ee/D8JnhKa'
+    return (
+      <div>
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          <img src={a1} alt="banner a1" width="100%" />
+        </a>
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          <img src={a2} alt="banner a2" width="100%" />
+        </a>
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          <img src={a3} alt="banner a3" width="100%" />
+        </a>
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          <img src={a4} alt="banner a4" width="100%" />
+        </a>
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          <img src={a5} alt="banner a5" width="100%" />
+        </a>
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          <img src={a6} alt="banner a6" width="100%" />
+        </a>
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          <img src={a7} alt="banner a7" width="100%" />
+        </a>
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          <img src={a8} alt="banner a8" width="100%" />
+        </a>
+      </div>
+    )
+  }
 
   return (
     <div className="min-h-screen bg-white">
